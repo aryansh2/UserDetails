@@ -70,6 +70,7 @@ public class UserDetails {
         if (getUserName().length() < 5){
             StringBuilder pass = new StringBuilder();
             int difference = 5 - getUserName().length();
+            pass.append(UserName);
             pass.append("0".repeat(Math.max(0, difference)));
             return pass.toString();
         }
